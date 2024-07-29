@@ -4,9 +4,9 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-
+        тут буде твій сайт
       </header>
-      тут буде твій сайт
+
     </div>
   );
 }
