@@ -21,10 +21,8 @@ const FirstPageContent = () => {
                     </p>
                 </div>
             </div>
+            <Contacts isModalOpen={isModalOpen} closeModal={closeModal} />
 
-            {isModalOpen && (
-                <Contacts isModalOpen={isModalOpen} closeModal={closeModal} />
-            )}
         </div>
     );
 }
