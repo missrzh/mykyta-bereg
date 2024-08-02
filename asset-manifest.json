@@ -1,8 +1,9 @@
 {
   "files": {
-    "main.css": "/mykyta-bereg/static/css/main.f418575a.css",
-    "main.js": "/mykyta-bereg/static/js/main.98133d26.js",
+    "main.css": "/mykyta-bereg/static/css/main.138f2ec6.css",
+    "main.js": "/mykyta-bereg/static/js/main.71896754.js",
     "static/js/453.97086529.chunk.js": "/mykyta-bereg/static/js/453.97086529.chunk.js",
+    "static/media/video.webm": "/mykyta-bereg/static/media/video.37f9e5e77eab6003caa2.webm",
     "static/media/PPFragment-TextRegular.woff": "/mykyta-bereg/static/media/PPFragment-TextRegular.48c2858eaf9eb534fc14.woff",
     "static/media/PPFragment-GlareRegular.woff": "/mykyta-bereg/static/media/PPFragment-GlareRegular.c7db04b97a323c81e5aa.woff",
     "static/media/PPFragment-GlareLight.woff": "/mykyta-bereg/static/media/PPFragment-GlareLight.f40d32fb5a4ef719c11d.woff",
@@ -11,12 +12,12 @@
     "static/media/PPFragment-SansLight.woff": "/mykyta-bereg/static/media/PPFragment-SansLight.89228630b724cf71c03f.woff",
     "static/media/PPFragment-SansRegular.woff": "/mykyta-bereg/static/media/PPFragment-SansRegular.144f0fb9c05ab3393d33.woff",
     "index.html": "/mykyta-bereg/index.html",
-    "main.f418575a.css.map": "/mykyta-bereg/static/css/main.f418575a.css.map",
-    "main.98133d26.js.map": "/mykyta-bereg/static/js/main.98133d26.js.map",
+    "main.138f2ec6.css.map": "/mykyta-bereg/static/css/main.138f2ec6.css.map",
+    "main.71896754.js.map": "/mykyta-bereg/static/js/main.71896754.js.map",
     "453.97086529.chunk.js.map": "/mykyta-bereg/static/js/453.97086529.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f418575a.css",
-    "static/js/main.98133d26.js"
+    "static/css/main.138f2ec6.css",
+    "static/js/main.71896754.js"
   ]
 }
