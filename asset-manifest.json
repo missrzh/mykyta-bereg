@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/mykyta-bereg/static/css/main.251b30cb.css",
-    "main.js": "/mykyta-bereg/static/js/main.d5915e9d.js",
+    "main.css": "/mykyta-bereg/static/css/main.d04806be.css",
+    "main.js": "/mykyta-bereg/static/js/main.2c8a8437.js",
     "static/js/453.97086529.chunk.js": "/mykyta-bereg/static/js/453.97086529.chunk.js",
     "static/media/NeueHaasDisplayThin.ttf": "/mykyta-bereg/static/media/NeueHaasDisplayThin.cdab14c1138747d56ba3.ttf",
     "index.html": "/mykyta-bereg/index.html",
-    "main.251b30cb.css.map": "/mykyta-bereg/static/css/main.251b30cb.css.map",
-    "main.d5915e9d.js.map": "/mykyta-bereg/static/js/main.d5915e9d.js.map",
+    "main.d04806be.css.map": "/mykyta-bereg/static/css/main.d04806be.css.map",
+    "main.2c8a8437.js.map": "/mykyta-bereg/static/js/main.2c8a8437.js.map",
     "453.97086529.chunk.js.map": "/mykyta-bereg/static/js/453.97086529.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.251b30cb.css",
-    "static/js/main.d5915e9d.js"
+    "static/css/main.d04806be.css",
+    "static/js/main.2c8a8437.js"
   ]
 }
