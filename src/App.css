@@ -96,6 +96,8 @@
   background-color: var(--background-color);
   color: var(--text-color);
   transition: background-color 1s ease, color 1s ease;
+  height: 100%;
+  position: relative;
 }
 
 
@@ -146,9 +148,9 @@ a {
 
 .theme-button-container {
   z-index: 3;
-  position: absolute;
-  top: 20px;
-  right: 25px;
+  position: fixed;
+  top: 27px;
+  right: 23px;
 }
 
 .theme-button:hover {
@@ -177,9 +179,9 @@ a {
   font-family: var(--font-family);
   color: var(--contact-color);
   font-size: calc(1px + 1.2vmin);
-  position: absolute;
-  top: 20px;
-  left: 25px;
+  position: fixed;
+  top: 30px;
+  left: 30px;
   z-index: 3;
   padding-bottom: 1px;
   display: inline-block;
@@ -212,8 +214,8 @@ a {
   z-index: 3;
   font-family: var(--font-family);
   color: var(--text-color);
-  position: absolute;
-  left: 25px;
+  position: fixed;
+  left: 30px;
   bottom: 165px;
   transform: rotate(90deg)scale(1, 0.85);
   transform-origin: left bottom;
@@ -224,7 +226,6 @@ a {
 .side-text p {
   letter-spacing: 2px;
   font-family: var(--font-family);
-  ;
   font-size: calc(1px + 1.3vmin);
   margin: 0;
 }
@@ -339,4 +340,50 @@ a {
 
 .scroll-btn.hidden {
   animation: slideOutUp 0.5s forwards;
+}
+
+
+.video-page-container {
+  position: relative;
+  overflow: hidden;
+  min-height: 100vh;
+  letter-spacing: 2px;
+  font-family: var(--font-family);
+  color: var(--text-color);
+  font-size: calc(1px + 1.2vmin);
+  line-height: 25px;
+  padding-top: 25px;
+}
+
+
+
+.video-section {
+  margin-left: 15%;
+  margin-top: 25px;
+}
+
+.video-type-title {
+  transform: scale(1, 0.9);
+}
+
+.video-link {
+  transform: scale(1, 0.9);
+  cursor: pointer;
+}
+
+.background-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+  /* Ensure the video is behind other content */
+}
+
+.video-section {
+  position: relative;
+  z-index: 1;
+  /* Ensure the video-section content is above the video */
 }

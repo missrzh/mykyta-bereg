@@ -1,16 +1,17 @@
 import React, { useState } from 'react';
 import Contacts from './contacts';
 
-const FirstPageContent = () => {
+const FirstPageContent = ({ onClick }) => {
     const [isModalOpen, setIsModalOpen] = useState(false);
 
     const openModal = () => setIsModalOpen(true);
     const closeModal = () => setIsModalOpen(false);
 
     return (
-        <div className="App">
-            <div className="container">
-                <p className="contact" onClick={openModal}>CONTACT</p>
+        <div >
+            <div className="contact" onClick={openModal}>CONTACT</div>
+            <Contacts isModalOpen={isModalOpen} closeModal={closeModal} />
+            <div className="container" onClick={onClick}>
                 <div className="content">
                     <p className="name">MYKYTA BEREG</p>
                     <p className="role">FILM EDITOR</p>
@@ -24,7 +25,7 @@ const FirstPageContent = () => {
                     CLICK ANYWHERE
                 </div>
             </div>
-            <Contacts isModalOpen={isModalOpen} closeModal={closeModal} />
+
 
         </div>
     );
