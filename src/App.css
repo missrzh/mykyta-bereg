@@ -1,3 +1,59 @@
+@font-face {
+  font-family: 'PP Fragment Glare Regular';
+  font-style: normal;
+  font-weight: normal;
+  src: local('PP Fragment Glare Regular'), url('./fonts/pp-fragment-webfont/PPFragment-GlareRegular.woff') format('woff');
+}
+
+
+@font-face {
+  font-family: 'PP Fragment Sans Regular';
+  font-style: normal;
+  font-weight: normal;
+  src: local('PP Fragment Sans Regular'), url('./fonts/pp-fragment-webfont/PPFragment-SansRegular.woff') format('woff');
+}
+
+
+@font-face {
+  font-family: 'PP Fragment Serif Regular';
+  font-style: normal;
+  font-weight: normal;
+  src: local('PP Fragment Serif Regular'), url('./fonts/pp-fragment-webfont/PPFragment-SerifRegular.woff') format('woff');
+}
+
+
+@font-face {
+  font-family: 'PP Fragment Text Regular';
+  font-style: normal;
+  font-weight: normal;
+  src: local('PP Fragment Text Regular'), url('./fonts/pp-fragment-webfont/PPFragment-TextRegular.woff') format('woff');
+}
+
+
+@font-face {
+  font-family: 'PP Fragment Glare Light';
+  font-style: normal;
+  font-weight: normal;
+  src: local('PP Fragment Glare Light'), url('./fonts/pp-fragment-webfont/PPFragment-GlareLight.woff') format('woff');
+}
+
+
+@font-face {
+  font-family: 'PP Fragment Sans Light';
+  font-style: normal;
+  font-weight: normal;
+  src: local('PP Fragment Sans Light'), url('./fonts/pp-fragment-webfont/PPFragment-SansLight.woff') format('woff');
+}
+
+
+@font-face {
+  font-family: 'PP Fragment Serif Light';
+  font-style: normal;
+  font-weight: normal;
+  src: local('PP Fragment Serif Light'), url('./fonts/pp-fragment-webfont/PPFragment-SerifLight.woff') format('woff');
+}
+
+
 /* Определение переменных для светлой темы */
 :root {
   --background-color: black;
@@ -8,6 +64,7 @@
   --contact-underline-bg: white;
   --button-bg: #007bff;
   --button-color: white;
+  --font-family: 'PP Fragment Serif Light';
 }
 
 /* Определение переменных для темной темы */
@@ -38,16 +95,13 @@
 .App {
   background-color: var(--background-color);
   color: var(--text-color);
-  transition: background-color 0.8s ease, color 0.8s ease;
+  transition: background-color 1s ease, color 1s ease;
 }
 
-@font-face {
-  font-family: "NeueHaas";
-  src: url(./fonts/NeueHaasDisplayThin.ttf);
-}
 
 /* Стили для контейнера */
 .container {
+  cursor: n-resize;
   position: relative;
   height: 100vh;
   display: flex;
@@ -103,29 +157,33 @@ a {
 
 /* Стили для контента */
 .content {
-  font-family: "NeueHaas";
+  letter-spacing: 0.3vmin;
+  font-family: var(--font-family);
   color: var(--text-color);
   text-align: center;
 }
 
 /* Стили для имени */
 .name {
-  font-size: calc(15px + 2vmin);
-  margin: 0;
+  font-size: calc(10px + 2vmin);
+  margin: 10px;
+  transform: scale(1, 0.85);
 }
 
 /* Стили для контакта */
 .contact {
+  letter-spacing: 2px;
   cursor: pointer;
-  font-family: "NeueHaas";
+  font-family: var(--font-family);
   color: var(--contact-color);
-  font-size: calc(1px + 1.5vmin);
+  font-size: calc(1px + 1.2vmin);
   position: absolute;
-  top: 10px;
+  top: 20px;
   left: 25px;
   z-index: 3;
   padding-bottom: 1px;
   display: inline-block;
+  transform: scale(1, 0.9);
 }
 
 .contact::after {
@@ -145,26 +203,29 @@ a {
 
 /* Стили для роли */
 .role {
-  font-size: calc(1px + 1.8vmin);
+  font-size: calc(1px + 1vmin);
   margin: 0;
 }
 
 /* Стили для бокового текста */
 .side-text {
   z-index: 3;
-  font-family: "NeueHaas";
+  font-family: var(--font-family);
   color: var(--text-color);
   position: absolute;
   left: 25px;
-  bottom: 150px;
-  transform: rotate(90deg);
+  bottom: 165px;
+  transform: rotate(90deg)scale(1, 0.85);
   transform-origin: left bottom;
   white-space: nowrap;
+
 }
 
 .side-text p {
-  font-family: "NeueHaas";
-  font-size: calc(1px + 1.6vmin);
+  letter-spacing: 2px;
+  font-family: var(--font-family);
+  ;
+  font-size: calc(1px + 1.3vmin);
   margin: 0;
 }
 
@@ -200,11 +261,15 @@ a {
 }
 
 .modal-content {
-  font-family: "NeueHaas";
+  font-family: var(--font-family);
+  letter-spacing: 3px;
   color: var(--text-color);
   padding: 20px;
   border-radius: 5px;
   text-align: center;
+  line-height: 22px;
+  font-size: calc(2px + 1.2vmin);
+  transform: scale(1, 0.9);
 }
 
 .modal-content button {
@@ -257,12 +322,15 @@ a {
 }
 
 .scroll-btn {
+  letter-spacing: 2px;
+  font-family: var(--font-family);
+  font-size: 12px;
   position: absolute;
   bottom: 25px;
   color: var(--text-color);
   opacity: 0;
   animation: fadeInOutUp 1.2s ease-in-out infinite;
-
+  transform: scale(1, 0.85);
 }
 
 .scroll-btn.visible {
