@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/mykyta-bereg/static/css/main.ddf7fc0e.css",
+    "main.css": "/mykyta-bereg/static/css/main.251b30cb.css",
     "main.js": "/mykyta-bereg/static/js/main.d5915e9d.js",
     "static/js/453.97086529.chunk.js": "/mykyta-bereg/static/js/453.97086529.chunk.js",
     "static/media/NeueHaasDisplayThin.ttf": "/mykyta-bereg/static/media/NeueHaasDisplayThin.cdab14c1138747d56ba3.ttf",
     "index.html": "/mykyta-bereg/index.html",
-    "main.ddf7fc0e.css.map": "/mykyta-bereg/static/css/main.ddf7fc0e.css.map",
+    "main.251b30cb.css.map": "/mykyta-bereg/static/css/main.251b30cb.css.map",
     "main.d5915e9d.js.map": "/mykyta-bereg/static/js/main.d5915e9d.js.map",
     "453.97086529.chunk.js.map": "/mykyta-bereg/static/js/453.97086529.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ddf7fc0e.css",
+    "static/css/main.251b30cb.css",
     "static/js/main.d5915e9d.js"
   ]
 }
