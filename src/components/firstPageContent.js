@@ -20,6 +20,9 @@ const FirstPageContent = () => {
                         <a href="https://www.instagram.com/oveay" target="_blank" rel="noopener noreferrer">MYKYTA BEREG</a>
                     </p>
                 </div>
+                <div className='scroll-btn'>
+                    CLICK ANYWHERE
+                </div>
             </div>
             <Contacts isModalOpen={isModalOpen} closeModal={closeModal} />
 
