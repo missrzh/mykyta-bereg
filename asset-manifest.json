@@ -1,9 +1,22 @@
 {
   "files": {
-    "main.css": "/mykyta-bereg/static/css/main.138f2ec6.css",
-    "main.js": "/mykyta-bereg/static/js/main.71896754.js",
+    "main.css": "/mykyta-bereg/static/css/main.a7097c0e.css",
+    "main.js": "/mykyta-bereg/static/js/main.0fa720ab.js",
     "static/js/453.97086529.chunk.js": "/mykyta-bereg/static/js/453.97086529.chunk.js",
+    "static/media/NAVI-x-Puma.webm": "/mykyta-bereg/static/media/NAVI-x-Puma.472b77371978faf2ed63.webm",
+    "static/media/Volkswagen-This-is-Amarok.webm": "/mykyta-bereg/static/media/Volkswagen-This-is-Amarok.4f6f90d651bcc5df0faf.webm",
+    "static/media/Alfa-Bank-You-Can.webm": "/mykyta-bereg/static/media/Alfa-Bank-You-Can.bb9c098c917cc2778331.webm",
     "static/media/video.webm": "/mykyta-bereg/static/media/video.37f9e5e77eab6003caa2.webm",
+    "static/media/Puma-Mirage-Tech.webm": "/mykyta-bereg/static/media/Puma-Mirage-Tech.68146417badf7b783774.webm",
+    "static/media/Madonna-Hung-Up-ft-Tokischa.webm": "/mykyta-bereg/static/media/Madonna-Hung-Up-ft-Tokischa.64709bd274988646845e.webm",
+    "static/media/Porsche-F.A.T.-Mankei_1.webm": "/mykyta-bereg/static/media/Porsche-F.A.T.-Mankei_1.ed3b2635277cfc631608.webm",
+    "static/media/McDonalds-The-invisible.webm": "/mykyta-bereg/static/media/McDonalds-The-invisible.17ec353419b573e594cc.webm",
+    "static/media/Adidas-x-F.C.-Union.webm": "/mykyta-bereg/static/media/Adidas-x-F.C.-Union.04bcf07867648eeb513c.webm",
+    "static/media/Porsche-Taycan.webm": "/mykyta-bereg/static/media/Porsche-Taycan.18c11e1a565344015ef8.webm",
+    "static/media/Michelle-Andrade-Na-Samoti.webm": "/mykyta-bereg/static/media/Michelle-Andrade-Na-Samoti.709650ae50bc416bc4f6.webm",
+    "static/media/David-Guetta-Ayra-Starr-Lil-Durk-Big-FU.webm": "/mykyta-bereg/static/media/David-Guetta-Ayra-Starr-Lil-Durk-Big-FU.9563b31dde8c36b74e63.webm",
+    "static/media/Tyla-Yaweh-City-Of-Dreams-ft-Chris-Brown.webm": "/mykyta-bereg/static/media/Tyla-Yaweh-City-Of-Dreams-ft-Chris-Brown.96e9e114c80b34020039.webm",
+    "static/media/Wanderlust.webm": "/mykyta-bereg/static/media/Wanderlust.ef5df923b4665dd70b08.webm",
     "static/media/PPFragment-TextRegular.woff": "/mykyta-bereg/static/media/PPFragment-TextRegular.48c2858eaf9eb534fc14.woff",
     "static/media/PPFragment-GlareRegular.woff": "/mykyta-bereg/static/media/PPFragment-GlareRegular.c7db04b97a323c81e5aa.woff",
     "static/media/PPFragment-GlareLight.woff": "/mykyta-bereg/static/media/PPFragment-GlareLight.f40d32fb5a4ef719c11d.woff",
@@ -12,12 +25,12 @@
     "static/media/PPFragment-SansLight.woff": "/mykyta-bereg/static/media/PPFragment-SansLight.89228630b724cf71c03f.woff",
     "static/media/PPFragment-SansRegular.woff": "/mykyta-bereg/static/media/PPFragment-SansRegular.144f0fb9c05ab3393d33.woff",
     "index.html": "/mykyta-bereg/index.html",
-    "main.138f2ec6.css.map": "/mykyta-bereg/static/css/main.138f2ec6.css.map",
-    "main.71896754.js.map": "/mykyta-bereg/static/js/main.71896754.js.map",
+    "main.a7097c0e.css.map": "/mykyta-bereg/static/css/main.a7097c0e.css.map",
+    "main.0fa720ab.js.map": "/mykyta-bereg/static/js/main.0fa720ab.js.map",
     "453.97086529.chunk.js.map": "/mykyta-bereg/static/js/453.97086529.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.138f2ec6.css",
-    "static/js/main.71896754.js"
+    "static/css/main.a7097c0e.css",
+    "static/js/main.0fa720ab.js"
   ]
 }
