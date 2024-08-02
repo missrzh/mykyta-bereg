@@ -1,5 +1,44 @@
+/* Определение переменных для светлой темы */
+:root {
+  --background-color: black;
+  --text-color: white;
+  --link-color: #ffffff;
+  --modal-overlay-bg: rgba(0, 0, 0, 0.7);
+  --contact-color: white;
+  --contact-underline-bg: white;
+  --button-bg: #007bff;
+  --button-color: white;
+}
+
+/* Определение переменных для темной темы */
+.dark-theme {
+  --background-color: black;
+  --text-color: white;
+  --link-color: #ffffff;
+  --modal-overlay-bg: rgba(0, 0, 0, 0.7);
+  --contact-color: white;
+  --contact-underline-bg: white;
+  --button-bg: #007bff;
+  --button-color: white;
+}
+
+/* Определение переменных для светлой темы */
+.light-theme {
+  --background-color: white;
+  --text-color: black;
+  --link-color: #000000;
+  --modal-overlay-bg: rgba(255, 255, 255, 0.7);
+  --contact-color: black;
+  --contact-underline-bg: black;
+  --button-bg: #007bff;
+  --button-color: black;
+}
+
+/* Основные стили приложения */
 .App {
-  background-color: black;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  transition: background-color 0.8s ease, color 0.8s ease;
 }
 
 @font-face {
@@ -7,10 +46,7 @@
   src: url(./fonts/NeueHaasDisplayThin.ttf);
 }
 
-
-
-
-/* MyComponent.css */
+/* Стили для контейнера */
 .container {
   position: relative;
   height: 100vh;
@@ -20,42 +56,76 @@
   transition: filter 0.3s ease;
 }
 
+/* Стили для ссылок */
 a {
-  color: #ffffff !important;
-  text-decoration: none
+  color: var(--link-color) !important;
+  text-decoration: none;
 }
 
-.contact-button {
+/* Стили для кнопки контактов */
+.theme-button-light {
+  background-color: #ffffff;
+  /* Белый цвет */
+  border: 1px solid var(--text-color);
+  /* Черный бордер */
+  box-sizing: border-box;
+}
+
+
+.theme-button-dark {
+  background-color: #000000;
+  /* Черный цвет */
+  border: 1px solid var(--text-color);
+  /* Белый бордер */
+
+  box-sizing: border-box;
+}
+
+.theme-button {
+  width: 7px;
+  height: 7px;
+  display: inline-block;
+  cursor: pointer;
+  transform: rotate(45deg);
+  margin: 0 10px;
+}
+
+.theme-button-container {
+  z-index: 3;
   position: absolute;
   top: 20px;
-  left: 25px;
+  right: 25px;
 }
 
+.theme-button:hover {
+  opacity: 0.8;
+}
+
+/* Стили для контента */
 .content {
   font-family: "NeueHaas";
-  color: white;
+  color: var(--text-color);
   text-align: center;
 }
 
+/* Стили для имени */
 .name {
-
   font-size: calc(15px + 2vmin);
   margin: 0;
 }
 
+/* Стили для контакта */
 .contact {
   cursor: pointer;
   font-family: "NeueHaas";
-  color: white;
+  color: var(--contact-color);
   font-size: calc(1px + 1.5vmin);
   position: absolute;
   top: 10px;
   left: 25px;
   z-index: 3;
   padding-bottom: 1px;
-  /* Отступ для пространства под текстом */
   display: inline-block;
-  /* Чтобы псевдоэлемент `::after` работал корректно */
 }
 
 .contact::after {
@@ -65,7 +135,7 @@ a {
   left: 0;
   width: 0;
   height: 1px;
-  background-color: rgb(255, 255, 255);
+  background-color: var(--contact-underline-bg);
   transition: width 0.6s ease;
 }
 
@@ -73,23 +143,23 @@ a {
   width: 100%;
 }
 
-
+/* Стили для роли */
 .role {
   font-size: calc(1px + 1.8vmin);
   margin: 0;
 }
 
+/* Стили для бокового текста */
 .side-text {
   z-index: 3;
   font-family: "NeueHaas";
-  color: white;
+  color: var(--text-color);
   position: absolute;
   left: 25px;
   bottom: 150px;
   transform: rotate(90deg);
   transform-origin: left bottom;
   white-space: nowrap;
-
 }
 
 .side-text p {
@@ -99,38 +169,13 @@ a {
 }
 
 /* Стили для модального окна */
-/* Ключевые кадры для плавного появления и исчезновения */
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: scale(1.05);
-  }
-
-  to {
-    opacity: 1;
-    transform: scale(1);
-  }
-}
-
-@keyframes fadeOut {
-  from {
-    opacity: 1;
-    transform: scale(1);
-  }
-
-  to {
-    opacity: 0;
-    transform: scale(1.05);
-  }
-}
-
 .modal-overlay {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: var(--modal-overlay-bg);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -154,12 +199,9 @@ a {
   transform: scale(1.05);
 }
 
-
-
-
 .modal-content {
   font-family: "NeueHaas";
-  color: white;
+  color: var(--text-color);
   padding: 20px;
   border-radius: 5px;
   text-align: center;
@@ -169,19 +211,13 @@ a {
   margin-top: 10px;
   padding: 10px 20px;
   border: none;
-  background-color: #007bff;
-  color: white;
+  background-color: var(--button-bg);
+  color: var(--button-color);
   border-radius: 5px;
   cursor: pointer;
 }
 
 .undername {
   font-size: calc(1px + 2vmin);
-  line-height: 0.1
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+  line-height: 0.1;
 }
