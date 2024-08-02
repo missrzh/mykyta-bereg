@@ -8,6 +8,8 @@
 }
 
 
+
+
 /* MyComponent.css */
 .container {
   position: relative;
@@ -50,7 +52,27 @@ a {
   top: 10px;
   left: 25px;
   z-index: 3;
+  padding-bottom: 1px;
+  /* Отступ для пространства под текстом */
+  display: inline-block;
+  /* Чтобы псевдоэлемент `::after` работал корректно */
 }
+
+.contact::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background-color: rgb(255, 255, 255);
+  transition: width 0.6s ease;
+}
+
+.contact:hover::after {
+  width: 100%;
+}
+
 
 .role {
   font-size: calc(1px + 1.8vmin);
@@ -108,7 +130,7 @@ a {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.7);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -116,7 +138,7 @@ a {
   z-index: 2;
   opacity: 0;
   visibility: hidden;
-  transform: scale(1.05);
+  transform: scale(1);
   transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out, transform 0.5s ease-in-out;
 }
 
