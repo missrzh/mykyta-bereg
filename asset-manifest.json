@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/mykyta-bereg/static/css/main.dfe321de.css",
-    "main.js": "/mykyta-bereg/static/js/main.c1b3bf3b.js",
+    "main.js": "/mykyta-bereg/static/js/main.34ffb1c0.js",
     "static/js/453.97086529.chunk.js": "/mykyta-bereg/static/js/453.97086529.chunk.js",
     "static/media/NAVI-x-Puma.webm": "/mykyta-bereg/static/media/NAVI-x-Puma.472b77371978faf2ed63.webm",
     "static/media/Volkswagen-This-is-Amarok.webm": "/mykyta-bereg/static/media/Volkswagen-This-is-Amarok.4f6f90d651bcc5df0faf.webm",
@@ -29,11 +29,11 @@
     "static/media/MADE Evolve Sans Thin EVO (PERSONAL USE).woff": "/mykyta-bereg/static/media/MADE Evolve Sans Thin EVO (PERSONAL USE).b075a6cf9528439d6e42.woff",
     "index.html": "/mykyta-bereg/index.html",
     "main.dfe321de.css.map": "/mykyta-bereg/static/css/main.dfe321de.css.map",
-    "main.c1b3bf3b.js.map": "/mykyta-bereg/static/js/main.c1b3bf3b.js.map",
+    "main.34ffb1c0.js.map": "/mykyta-bereg/static/js/main.34ffb1c0.js.map",
     "453.97086529.chunk.js.map": "/mykyta-bereg/static/js/453.97086529.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.dfe321de.css",
-    "static/js/main.c1b3bf3b.js"
+    "static/js/main.34ffb1c0.js"
   ]
 }
