@@ -133,6 +133,7 @@
   justify-content: center;
   align-items: center;
   transition: filter 0.3s ease;
+  z-index: 3;
 }
 
 /* Стили для ссылок */
@@ -181,6 +182,7 @@ a {
 
 /* Стили для контента */
 .content {
+
   z-index: 2;
   letter-spacing: 0.3vmin;
   font-family: var(--font-family);
@@ -212,6 +214,8 @@ a {
   display: inline-block;
   transform: scale(1, 0.9);
   transition: color 1s ease, color 1s ease;
+
+
 }
 
 .contact::after {
@@ -242,7 +246,7 @@ a {
   color: var(--text-color);
   position: fixed;
   left: 30px;
-  bottom: 100px;
+  bottom: 90px;
   transform: rotate(90deg)scale(1, 0.85);
   transform-origin: left bottom;
   white-space: nowrap;
@@ -268,7 +272,7 @@ a {
   justify-content: center;
   align-items: center;
   backdrop-filter: blur(10px);
-  z-index: 3;
+  z-index: 4;
   opacity: 0;
   visibility: hidden;
   transform: scale(1);
@@ -288,6 +292,7 @@ a {
 }
 
 .modal-content {
+  text-transform: uppercase;
   font-family: var(--font-family);
   letter-spacing: 3px;
   color: var(--text-color);
@@ -299,8 +304,41 @@ a {
   transform: scale(1, 0.9);
 }
 
+.custom-link {
+  display: inline;
+  /* ensure inline display for paragraph text */
+}
+
 .custom-link a {
-  text-decoration: underline;
+  position: relative;
+  color: inherit;
+  /* сохранить цвет текста */
+  text-decoration: none;
+  /* убрать стандартное подчеркивание */
+  display: inline-block;
+  vertical-align: baseline;
+  /* align with text baseline */
+}
+
+.custom-link a:before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  background-color: currentColor;
+  transform: scaleX(0);
+  /* initially hidden */
+  transform-origin: left;
+  /* animation starts from the left */
+  transition: transform 0.5s;
+  /* animate transform */
+}
+
+.custom-link a:hover:before {
+  transform: scaleX(1);
+  /* reveal the underline */
 }
 
 .modal-content button {
@@ -362,7 +400,6 @@ a {
   opacity: 0;
   animation: fadeInOutUp 1.2s ease-in-out infinite;
   transform: scale(1, 0.85);
-
 }
 
 .scroll-btn.visible {
@@ -388,7 +425,9 @@ a {
   text-transform: uppercase;
 }
 
-
+.contact-margin {
+  margin-top: 20px;
+}
 
 .video-section {
   margin-left: 15%;
@@ -403,7 +442,7 @@ a {
 .video-link {
   transform: scale(1, 0.9);
   cursor: pointer;
-
+  z-index: 1000;
 }
 
 .background-video {

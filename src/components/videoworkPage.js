@@ -1,4 +1,4 @@
-import React, { forwardRef, useState } from 'react';
+import React, { forwardRef } from 'react';
 import video1 from './../video/video.webm';
 import video2 from './../video/NAVI-x-Puma.webm';
 import video3 from './../video/Adidas-x-F.C.-Union.webm';
@@ -53,35 +53,39 @@ const videoSHORTFILMLinks = [
 
 
 
-const VideoWorkPage = forwardRef(({ setHoveredVideo, setIsDarkTheme, isDarkTheme }, ref) => {
-    const [changeTheme, setChangeTheme] = useState(false)
+const VideoWorkPage = forwardRef(({ setHoveredVideo }, ref) => {
+    //const [changeTheme, setChangeTheme] = useState(false)
 
-    const handleMouseEnter = (videoLink) => {
+    //const handleMouseEnter = (videoLink) => {
+    //    setHoveredVideo(videoLink)
+    //    if (isDarkTheme !== videoLink.darkTheme) {
+    //        setChangeTheme(true)
+    //        setIsDarkTheme(!isDarkTheme)
+    //    }
+    //}
+
+    //const handleMouseLeave = () => {
+    //    setHoveredVideo(null)
+    //    if (changeTheme) {
+    //        setChangeTheme(false)
+    //        setIsDarkTheme(!isDarkTheme)
+    //    }
+    //}
+    const handleMouseHover = (videoLink) => {
+
         setHoveredVideo(videoLink)
-        if (isDarkTheme !== videoLink.darkTheme) {
-            setChangeTheme(true)
-            setIsDarkTheme(!isDarkTheme)
-        }
-    }
-
-    const handleMouseLeave = () => {
-        setHoveredVideo(null)
-        if (changeTheme) {
-            setChangeTheme(false)
-            setIsDarkTheme(!isDarkTheme)
-        }
     }
     return (
 
-        <div className={`video-page-container section `} ref={ref}>
+        <div className={`video-page-container section`} ref={ref}>
 
             <div className='video-section'>
                 <div className='video-type-title'></div>
                 {videoLinks.map((videoLink, index) => (
                     <div key={index}
                         className='video-link'
-                        onMouseEnter={() => handleMouseEnter(videoLink)}
-                        onMouseLeave={() => handleMouseLeave()}
+                        onMouseEnter={() => handleMouseHover(videoLink)}
+                        onMouseLeave={() => handleMouseHover(videoLink)}
                     >
                         {videoLink.text}
                     </div>
@@ -90,8 +94,7 @@ const VideoWorkPage = forwardRef(({ setHoveredVideo, setIsDarkTheme, isDarkTheme
                 {videoMusicLinks.map((videoLink, index) => (
                     <div key={index}
                         className='video-link'
-                        onMouseEnter={() => handleMouseEnter(videoLink)}
-                        onMouseLeave={() => handleMouseLeave()}
+                        onMouseEnter={() => handleMouseHover(videoLink)}
                     >
                         {videoLink.text}
                     </div>
@@ -100,8 +103,7 @@ const VideoWorkPage = forwardRef(({ setHoveredVideo, setIsDarkTheme, isDarkTheme
                 {videoSHORTFILMLinks.map((videoLink, index) => (
                     <div key={index}
                         className='video-link'
-                        onMouseEnter={() => handleMouseEnter(videoLink)}
-                        onMouseLeave={() => handleMouseLeave()}
+                        onMouseEnter={() => handleMouseHover(videoLink)}
                     >
                         {videoLink.text}
                     </div>
