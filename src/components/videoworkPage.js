@@ -50,7 +50,7 @@ const VideoWorkPage = forwardRef((props, ref) => {
     return (
         <div className={`video-page-container section ${hoveredVideo ? 'hovered' : ''}`} ref={ref}>
             {hoveredVideo && (
-                <video className="background-video" autoPlay loop muted poster={'./../first-stop/logo512.png'}>
+                <video className="background-video" autoPlay loop muted preload="auto" poster={'./../first-stop/logo512.png'}>
                     <source src={hoveredVideo.video} type="video/webm" />
                     Your browser does not support the video tag.
                 </video>
