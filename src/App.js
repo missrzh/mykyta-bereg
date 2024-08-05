@@ -5,6 +5,7 @@ import VideoWorkPage from './components/videoworkPage';
 
 function App() {
   const [isDarkTheme, setIsDarkTheme] = useState(true);
+  const [hoveredVideo, setHoveredVideo] = useState(null);
 
   const setDarkTheme = () => {
     setIsDarkTheme(true);
@@ -27,13 +28,19 @@ function App() {
 
   return (
     <div className={`App ${isDarkTheme ? 'dark-theme' : 'light-theme'}`}>
+      {hoveredVideo && (
+        <video className="background-video" autoPlay loop muted preload="auto" poster={'./first-stop/logo512.png'}>
+          <source src={hoveredVideo.video} type="video/webm" />
+          Your browser does not support the video tag.
+        </video>
+      )}
       <div className='theme-button-container'>
         <div className='theme-button theme-button-dark' onClick={setDarkTheme}></div>
         <div className='theme-button theme-button-light' onClick={setLightTheme}></div>
       </div>
 
       <FirstPageContent onClick={scrollToVideoWork} />
-      <VideoWorkPage ref={videoWorkRef} />
+      <VideoWorkPage ref={videoWorkRef} setHoveredVideo={setHoveredVideo} setIsDarkTheme={setIsDarkTheme} isDarkTheme={isDarkTheme} />
 
     </div>
   );
