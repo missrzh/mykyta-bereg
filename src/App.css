@@ -477,6 +477,7 @@ a {
   object-fit: cover;
   transform: translate(-50%, -50%);
   z-index: 1;
+  pointer-events: none;
 }
 
 .background-video::-webkit-media-controls {
@@ -492,6 +493,14 @@ a {
 }
 
 .background-video::-webkit-media-controls-volume-slider {
+  display: none !important;
+}
+
+.background-video::-webkit-media-controls-mute-button {
+  display: none !important;
+}
+
+.background-video::-webkit-media-controls-fullscreen-button {
   display: none !important;
 }
 
