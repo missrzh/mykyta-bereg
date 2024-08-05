@@ -197,6 +197,7 @@ a {
   font-size: calc(10px + 2vmin);
   margin: 10px;
   transform: scale(1, 0.85);
+  font-family: 'MADE Evolve Sans Bold';
 }
 
 /* Стили для контакта */
@@ -423,6 +424,9 @@ a {
   line-height: 25px;
   padding-top: 10px;
   text-transform: uppercase;
+  width: 100%;
+
+  z-index: 2;
 }
 
 .contact-margin {

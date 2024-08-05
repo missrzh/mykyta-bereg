@@ -27,7 +27,7 @@ function App() {
   return (
     <div className={`App ${isDarkTheme ? 'dark-theme' : 'light-theme'}`}>
       {hoveredVideo && (
-        <video className="background-video" autoPlay loop muted playsInline preload="auto" poster={'./first-stop/logo512.png'} key={hoveredVideo.video}>
+        <video className="background-video" autoPlay loop muted preload="auto" poster={'./first-stop/logo512.png'} key={hoveredVideo.video}>
           <source src={hoveredVideo.video} type="video/webm" />
           Your browser does not support the video tag.
         </video>
