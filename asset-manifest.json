@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/mykyta-bereg/static/css/main.b673fd5f.css",
+    "main.css": "/mykyta-bereg/static/css/main.11fa496f.css",
     "main.js": "/mykyta-bereg/static/js/main.df49fc09.js",
     "static/js/453.97086529.chunk.js": "/mykyta-bereg/static/js/453.97086529.chunk.js",
     "static/media/NAVI-x-Puma.webm": "/mykyta-bereg/static/media/NAVI-x-Puma.472b77371978faf2ed63.webm",
@@ -28,12 +28,12 @@
     "static/media/MADE Evolve Sans Thin (PERSONAL USE).woff": "/mykyta-bereg/static/media/MADE Evolve Sans Thin (PERSONAL USE).6b01b553c7f4eaed4f6b.woff",
     "static/media/MADE Evolve Sans Thin EVO (PERSONAL USE).woff": "/mykyta-bereg/static/media/MADE Evolve Sans Thin EVO (PERSONAL USE).b075a6cf9528439d6e42.woff",
     "index.html": "/mykyta-bereg/index.html",
-    "main.b673fd5f.css.map": "/mykyta-bereg/static/css/main.b673fd5f.css.map",
+    "main.11fa496f.css.map": "/mykyta-bereg/static/css/main.11fa496f.css.map",
     "main.df49fc09.js.map": "/mykyta-bereg/static/js/main.df49fc09.js.map",
     "453.97086529.chunk.js.map": "/mykyta-bereg/static/js/453.97086529.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b673fd5f.css",
+    "static/css/main.11fa496f.css",
     "static/js/main.df49fc09.js"
   ]
 }
