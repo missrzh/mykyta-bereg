@@ -72,7 +72,6 @@ const VideoWorkPage = forwardRef(({ setHoveredVideo }, ref) => {
     //    }
     //}
     const handleMouseHover = (videoLink) => {
-
         setHoveredVideo(videoLink)
     }
     return (
@@ -82,30 +81,26 @@ const VideoWorkPage = forwardRef(({ setHoveredVideo }, ref) => {
             <div className='video-section'>
                 <div className='video-type-title'></div>
                 {videoLinks.map((videoLink, index) => (
-                    <div key={index}
-                        className='video-link'
-                        onMouseEnter={() => handleMouseHover(videoLink)}
-                        onMouseLeave={() => handleMouseHover(videoLink)}
-                    >
-                        {videoLink.text}
+                    <div className="video-link-container" key={index}>
+                        <div className='video-link' onMouseEnter={() => handleMouseHover(videoLink)}>
+                            {videoLink.text}
+                        </div>
                     </div>
                 ))}
                 <div className='video-type-title'></div>
                 {videoMusicLinks.map((videoLink, index) => (
-                    <div key={index}
-                        className='video-link'
-                        onMouseEnter={() => handleMouseHover(videoLink)}
-                    >
-                        {videoLink.text}
+                    <div className="video-link-container" key={index}>
+                        <div className='video-link' onMouseEnter={() => handleMouseHover(videoLink)}>
+                            {videoLink.text}
+                        </div>
                     </div>
                 ))}
                 <div className='video-type-title'></div>
                 {videoSHORTFILMLinks.map((videoLink, index) => (
-                    <div key={index}
-                        className='video-link'
-                        onMouseEnter={() => handleMouseHover(videoLink)}
-                    >
-                        {videoLink.text}
+                    <div className="video-link-container" key={index}>
+                        <div className='video-link' onMouseEnter={() => handleMouseHover(videoLink)}>
+                            {videoLink.text}
+                        </div>
                     </div>
                 ))}
 

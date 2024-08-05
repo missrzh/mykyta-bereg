@@ -439,10 +439,29 @@ a {
   transform: scale(1, 0.9);
 }
 
+.custom-text-link {
+  display: inline;
+  /* Устанавливает ширину по длине текста */
+  white-space: nowrap;
+  /* Отключает перенос текста */
+}
+
+.video-link-container {
+  display: block;
+}
+
 .video-link {
+  display: inline-block;
+  white-space: nowrap;
   transform: scale(1, 0.9);
   cursor: pointer;
   z-index: 1000;
+
+}
+
+.video-link:last-child {
+  margin-right: 0;
+  /* Убирает отступ справа у последнего элемента */
 }
 
 .background-video {
