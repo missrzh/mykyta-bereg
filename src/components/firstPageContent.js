@@ -18,7 +18,7 @@ const FirstPageContent = ({ onClick }) => {
                 </div>
                 <div className="side-text">
                     <p>
-                        <a href="https://www.instagram.com/oveay" target="_blank" rel="noopener noreferrer">MYKYTA BEREG</a>
+                        <a href="https://www.instagram.com/oveay" target="_blank" rel="noopener noreferrer">@OVEAY</a>
                     </p>
                 </div>
                 <div className='scroll-btn'>

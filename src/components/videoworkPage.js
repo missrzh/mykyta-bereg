@@ -50,13 +50,13 @@ const VideoWorkPage = forwardRef((props, ref) => {
     return (
         <div className={`video-page-container section ${hoveredVideo ? 'hovered' : ''}`} ref={ref}>
             {hoveredVideo && (
-                <video className="background-video" autoPlay loop muted>
+                <video className="background-video" autoPlay loop muted poster={'./../first-stop/logo512.png'}>
                     <source src={hoveredVideo.video} type="video/webm" />
                     Your browser does not support the video tag.
                 </video>
             )}
             <div className='video-section'>
-                <div className='video-type-title'>COMMERCIAL</div>
+                <div className='video-type-title'></div>
                 {videoLinks.map((videoLink, index) => (
 
                     <div key={index}
@@ -68,7 +68,7 @@ const VideoWorkPage = forwardRef((props, ref) => {
                     </div>
 
                 ))}
-                <div className='video-type-title'>MUSIC VIDEO</div>
+                <div className='video-type-title'></div>
                 {videoMusicLinks.map((videoLink, index) => (
 
                     <div key={index}
@@ -80,7 +80,7 @@ const VideoWorkPage = forwardRef((props, ref) => {
                     </div>
 
                 ))}
-                <div className='video-type-title'>SHORT FILM</div>
+                <div className='video-type-title'></div>
                 {videoSHORTFILMLinks.map((videoLink, index) => (
 
                     <div key={index}

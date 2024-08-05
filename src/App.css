@@ -1,58 +1,81 @@
 @font-face {
-  font-family: 'PP Fragment Glare Regular';
+  font-family: 'MADE Evolve Sans Regular';
   font-style: normal;
   font-weight: normal;
-  src: local('PP Fragment Glare Regular'), url('./fonts/pp-fragment-webfont/PPFragment-GlareRegular.woff') format('woff');
+  src: local('MADE Evolve Sans Regular'), url('./fonts/made-evolve-sans-webfont/MADE Evolve Sans Regular (PERSONAL USE).woff') format('woff');
 }
 
 
 @font-face {
-  font-family: 'PP Fragment Sans Regular';
+  font-family: 'MADE Evolve Sans Thin';
   font-style: normal;
   font-weight: normal;
-  src: local('PP Fragment Sans Regular'), url('./fonts/pp-fragment-webfont/PPFragment-SansRegular.woff') format('woff');
+  src: local('MADE Evolve Sans Thin'), url('./fonts/made-evolve-sans-webfont/MADE Evolve Sans Thin (PERSONAL USE).woff') format('woff');
 }
 
 
 @font-face {
-  font-family: 'PP Fragment Serif Regular';
+  font-family: 'MADE Evolve Sans Light';
   font-style: normal;
   font-weight: normal;
-  src: local('PP Fragment Serif Regular'), url('./fonts/pp-fragment-webfont/PPFragment-SerifRegular.woff') format('woff');
+  src: local('MADE Evolve Sans Light'), url('./fonts/made-evolve-sans-webfont/MADE Evolve Sans Light (PERSONAL USE).woff') format('woff');
 }
 
 
 @font-face {
-  font-family: 'PP Fragment Text Regular';
+  font-family: 'MADE Evolve Sans Medium';
   font-style: normal;
   font-weight: normal;
-  src: local('PP Fragment Text Regular'), url('./fonts/pp-fragment-webfont/PPFragment-TextRegular.woff') format('woff');
+  src: local('MADE Evolve Sans Medium'), url('./fonts/made-evolve-sans-webfont/MADE Evolve Sans Medium (PERSONAL USE).woff') format('woff');
 }
 
 
 @font-face {
-  font-family: 'PP Fragment Glare Light';
+  font-family: 'MADE Evolve Sans Bold';
   font-style: normal;
   font-weight: normal;
-  src: local('PP Fragment Glare Light'), url('./fonts/pp-fragment-webfont/PPFragment-GlareLight.woff') format('woff');
+  src: local('MADE Evolve Sans Bold'), url('./fonts/made-evolve-sans-webfont/MADE Evolve Sans Bold (PERSONAL USE).woff') format('woff');
 }
 
 
 @font-face {
-  font-family: 'PP Fragment Sans Light';
+  font-family: 'MADE Evolve Sans EVO Regular';
   font-style: normal;
   font-weight: normal;
-  src: local('PP Fragment Sans Light'), url('./fonts/pp-fragment-webfont/PPFragment-SansLight.woff') format('woff');
+  src: local('MADE Evolve Sans EVO Regular'), url('./fonts/made-evolve-sans-webfont/MADE Evolve Sans Regular EVO (PERSONAL USE).woff') format('woff');
 }
 
 
 @font-face {
-  font-family: 'PP Fragment Serif Light';
+  font-family: 'MADE Evolve Sans EVO Thin';
   font-style: normal;
   font-weight: normal;
-  src: local('PP Fragment Serif Light'), url('./fonts/pp-fragment-webfont/PPFragment-SerifLight.woff') format('woff');
+  src: local('MADE Evolve Sans EVO Thin'), url('./fonts/made-evolve-sans-webfont/MADE Evolve Sans Thin EVO (PERSONAL USE).woff') format('woff');
 }
 
+
+@font-face {
+  font-family: 'MADE Evolve Sans EVO Light';
+  font-style: normal;
+  font-weight: normal;
+  src: local('MADE Evolve Sans EVO Light'), url('./fonts/made-evolve-sans-webfont/MADE Evolve Sans Light EVO (PERSONAL USE).woff') format('woff');
+}
+
+
+@font-face {
+  font-family: 'MADE Evolve Sans EVO Medium';
+  font-style: normal;
+  font-weight: normal;
+  src: local('MADE Evolve Sans EVO Medium'), url('./fonts/made-evolve-sans-webfont/MADE Evolve Sans Medium EVO (PERSONAL USE).woff') format('woff');
+}
+
+
+@font-face {
+  font-family: 'MADE Evolve Sans EVO Bold';
+  font-style: normal;
+  font-weight: normal;
+  src: local('MADE Evolve Sans EVO Bold'), url('./fonts/made-evolve-sans-webfont/MADE Evolve Sans Bold EVO (PERSONAL USE).woff') format('woff');
+}
 
 /* Определение переменных для светлой темы */
 :root {
@@ -64,7 +87,7 @@
   --contact-underline-bg: white;
   --button-bg: #007bff;
   --button-color: white;
-  --font-family: 'PP Fragment Serif Light';
+  --font-family: 'MADE Evolve Sans Medium';
 }
 
 /* Определение переменных для темной темы */
@@ -114,7 +137,7 @@
 
 /* Стили для ссылок */
 a {
-  color: var(--link-color) !important;
+  color: var(--link-color);
   text-decoration: none;
 }
 
@@ -142,7 +165,6 @@ a {
   height: 7px;
   display: inline-block;
   cursor: pointer;
-  transform: rotate(45deg);
   margin: 0 10px;
 }
 
@@ -216,7 +238,7 @@ a {
   color: var(--text-color);
   position: fixed;
   left: 30px;
-  bottom: 165px;
+  bottom: 100px;
   transform: rotate(90deg)scale(1, 0.85);
   transform-origin: left bottom;
   white-space: nowrap;
@@ -271,6 +293,10 @@ a {
   line-height: 22px;
   font-size: calc(2px + 1.2vmin);
   transform: scale(1, 0.9);
+}
+
+.custom-link a {
+  text-decoration: underline;
 }
 
 .modal-content button {
