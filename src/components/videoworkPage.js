@@ -1,4 +1,6 @@
 import React, { forwardRef } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
+import { setHoveredVideo } from '../store/videoSlice';
 import video1 from './../video/video.webm';
 import video2 from './../video/NAVI-x-Puma.webm';
 import video3 from './../video/Adidas-x-F.C.-Union.webm';
@@ -53,32 +55,17 @@ const videoSHORTFILMLinks = [
 
 
 
-const VideoWorkPage = forwardRef(({ setHoveredVideo }, ref) => {
-    //const [changeTheme, setChangeTheme] = useState(false)
+const VideoWorkPage = forwardRef((_, ref) => {
+    const dispatch = useDispatch();
+    const { isContactVisible } = useSelector((state) => state.ui);
 
-    //const handleMouseEnter = (videoLink) => {
-    //    setHoveredVideo(videoLink)
-    //    if (isDarkTheme !== videoLink.darkTheme) {
-    //        setChangeTheme(true)
-    //        setIsDarkTheme(!isDarkTheme)
-    //    }
-    //}
-
-    //const handleMouseLeave = () => {
-    //    setHoveredVideo(null)
-    //    if (changeTheme) {
-    //        setChangeTheme(false)
-    //        setIsDarkTheme(!isDarkTheme)
-    //    }
-    //}
     const handleMouseHover = (videoLink) => {
-        setHoveredVideo(videoLink)
-    }
+        dispatch(setHoveredVideo(videoLink));
+    };
+
     return (
-
         <div className={`video-page-container section`} ref={ref}>
-
-            <div className='video-section'>
+            <div className={`video-section ${isContactVisible ? 'visible' : ''}`}>
                 <div className='video-type-title'></div>
                 {videoLinks.map((videoLink, index) => (
                     <div className="video-link-container" key={index}>
@@ -103,10 +90,8 @@ const VideoWorkPage = forwardRef(({ setHoveredVideo }, ref) => {
                         </div>
                     </div>
                 ))}
-
             </div>
         </div>
-
     );
 });
 
