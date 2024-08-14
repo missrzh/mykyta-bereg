@@ -1,81 +1,118 @@
 @font-face {
-  font-family: 'MADE Evolve Sans Regular';
+  font-family: 'Avenir Next Cyr Regular';
   font-style: normal;
   font-weight: normal;
-  src: local('MADE Evolve Sans Regular'), url('./fonts/made-evolve-sans-webfont/MADE Evolve Sans Regular (PERSONAL USE).woff') format('woff');
+  src: local('Avenir Next Cyr Regular'), url('./fonts/avenir next cyr/AvenirNextCyr-Regular.otf') format('opentype');
 }
-
 
 @font-face {
-  font-family: 'MADE Evolve Sans Thin';
+  font-family: 'Avenir Next Cyr Italic';
   font-style: normal;
   font-weight: normal;
-  src: local('MADE Evolve Sans Thin'), url('./fonts/made-evolve-sans-webfont/MADE Evolve Sans Thin (PERSONAL USE).woff') format('woff');
+  src: local('Avenir Next Cyr Italic'), url('./fonts/avenir next cyr/AvenirNextCyr-Italic.otf') format('opentype');
 }
-
 
 @font-face {
-  font-family: 'MADE Evolve Sans Light';
+  font-family: 'Avenir Next Cyr Thin';
   font-style: normal;
   font-weight: normal;
-  src: local('MADE Evolve Sans Light'), url('./fonts/made-evolve-sans-webfont/MADE Evolve Sans Light (PERSONAL USE).woff') format('woff');
+  src: local('Avenir Next Cyr Thin'), url('./fonts/avenir next cyr/AvenirNextCyr-Thin.otf') format('opentype');
 }
-
 
 @font-face {
-  font-family: 'MADE Evolve Sans Medium';
+  font-family: 'Avenir Next Cyr Thin Italic';
   font-style: normal;
   font-weight: normal;
-  src: local('MADE Evolve Sans Medium'), url('./fonts/made-evolve-sans-webfont/MADE Evolve Sans Medium (PERSONAL USE).woff') format('woff');
+  src: local('Avenir Next Cyr Thin Italic'), url('./fonts/avenir next cyr/AvenirNextCyr-ThinItalic.otf') format('opentype');
 }
-
 
 @font-face {
-  font-family: 'MADE Evolve Sans Bold';
+  font-family: 'Avenir Next Cyr Light';
   font-style: normal;
   font-weight: normal;
-  src: local('MADE Evolve Sans Bold'), url('./fonts/made-evolve-sans-webfont/MADE Evolve Sans Bold (PERSONAL USE).woff') format('woff');
+  src: local('Avenir Next Cyr Light'), url('./fonts/avenir next cyr/AvenirNextCyr-Light.otf') format('opentype');
 }
-
 
 @font-face {
-  font-family: 'MADE Evolve Sans EVO Regular';
+  font-family: 'Avenir Next Cyr Light Italic';
   font-style: normal;
   font-weight: normal;
-  src: local('MADE Evolve Sans EVO Regular'), url('./fonts/made-evolve-sans-webfont/MADE Evolve Sans Regular EVO (PERSONAL USE).woff') format('woff');
+  src: local('Avenir Next Cyr Light Italic'), url('./fonts/avenir next cyr/AvenirNextCyr-LightItalic.otf') format('opentype');
 }
-
 
 @font-face {
-  font-family: 'MADE Evolve Sans EVO Thin';
+  font-family: 'Avenir Next Cyr Medium';
   font-style: normal;
   font-weight: normal;
-  src: local('MADE Evolve Sans EVO Thin'), url('./fonts/made-evolve-sans-webfont/MADE Evolve Sans Thin EVO (PERSONAL USE).woff') format('woff');
+  src: local('Avenir Next Cyr Medium'), url('./fonts/avenir next cyr/AvenirNextCyr-Medium.otf') format('opentype');
 }
-
 
 @font-face {
-  font-family: 'MADE Evolve Sans EVO Light';
+  font-family: 'Avenir Next Cyr Medium Italic';
   font-style: normal;
   font-weight: normal;
-  src: local('MADE Evolve Sans EVO Light'), url('./fonts/made-evolve-sans-webfont/MADE Evolve Sans Light EVO (PERSONAL USE).woff') format('woff');
+  src: local('Avenir Next Cyr Medium Italic'), url('./fonts/avenir next cyr/AvenirNextCyr-MediumItalic.otf') format('opentype');
 }
-
 
 @font-face {
-  font-family: 'MADE Evolve Sans EVO Medium';
+  font-family: 'Avenir Next Cyr Bold';
   font-style: normal;
   font-weight: normal;
-  src: local('MADE Evolve Sans EVO Medium'), url('./fonts/made-evolve-sans-webfont/MADE Evolve Sans Medium EVO (PERSONAL USE).woff') format('woff');
+  src: local('Avenir Next Cyr Bold'), url('./fonts/avenir next cyr/AvenirNextCyr-Bold.otf') format('opentype');
 }
-
 
 @font-face {
-  font-family: 'MADE Evolve Sans EVO Bold';
+  font-family: 'Avenir Next Cyr Bold Italic';
   font-style: normal;
   font-weight: normal;
-  src: local('MADE Evolve Sans EVO Bold'), url('./fonts/made-evolve-sans-webfont/MADE Evolve Sans Bold EVO (PERSONAL USE).woff') format('woff');
+  src: local('Avenir Next Cyr Bold Italic'), url('./fonts/avenir next cyr/AvenirNextCyr-BoldItalic.otf') format('opentype');
 }
+
+@font-face {
+  font-family: 'Avenir Next Cyr Heavy';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Avenir Next Cyr Heavy'), url('./fonts/avenir next cyr/AvenirNextCyr-Heavy.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Avenir Next Cyr Heavy Italic';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Avenir Next Cyr Heavy Italic'), url('./fonts/avenir next cyr/AvenirNextCyr-HeavyItalic.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Avenir Next Cyr Demi';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Avenir Next Cyr Demi'), url('./fonts/avenir next cyr/AvenirNextCyr-Demi.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Avenir Next Cyr Demi Italic';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Avenir Next Cyr Demi Italic'), url('./fonts/avenir next cyr/AvenirNextCyr-DemiItalic.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Avenir Next Cyr Ultra Light';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Avenir Next Cyr Ultra Light'), url('./fonts/avenir next cyr/AvenirNextCyr-UltraLight.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Avenir Next Cyr Ultra Light Italic';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Avenir Next Cyr Ultra Light Italic'), url('./fonts/avenir next cyr/AvenirNextCyr-UltraLightIt.otf') format('opentype');
+}
+
+
+
+
 
 /* Определение переменных для светлой темы */
 :root {
@@ -87,7 +124,7 @@
   --contact-underline-bg: white;
   --button-bg: #007bff;
   --button-color: white;
-  --font-family: 'MADE Evolve Sans Medium';
+  --font-family: 'Avenir Next Cyr Regular';
 }
 
 /* Определение переменных для темной темы */
@@ -197,7 +234,7 @@ a {
   font-size: calc(10px + 2vmin);
   margin: 10px;
   transform: scale(1, 0.85);
-  font-family: 'MADE Evolve Sans Bold';
+  font-family: 'Avenir Next Cyr Bold';
 }
 
 /* Стили для контакта */
