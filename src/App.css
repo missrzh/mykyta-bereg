@@ -509,7 +509,7 @@ a {
 
 }
 
-.video-link:hover {
+.video-link-hovered {
   text-decoration: underline;
 }
 

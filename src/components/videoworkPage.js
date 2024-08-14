@@ -58,6 +58,7 @@ const videoSHORTFILMLinks = [
 const VideoWorkPage = forwardRef((_, ref) => {
     const dispatch = useDispatch();
     const { isContactVisible } = useSelector((state) => state.ui);
+    const { hoveredVideo } = useSelector((state) => state.video)
 
     const handleMouseHover = (videoLink) => {
         dispatch(setHoveredVideo(videoLink));
@@ -69,7 +70,7 @@ const VideoWorkPage = forwardRef((_, ref) => {
                 <div className='video-type-title'></div>
                 {videoLinks.map((videoLink, index) => (
                     <div className="video-link-container" key={index}>
-                        <div className='video-link' onMouseEnter={() => handleMouseHover(videoLink)}>
+                        <div className={`video-link ${hoveredVideo && hoveredVideo.text === videoLink.text ? 'video-link-hovered' : ''}`} onMouseEnter={() => handleMouseHover(videoLink)}>
                             {videoLink.text}
                         </div>
                     </div>
