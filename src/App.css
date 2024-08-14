@@ -470,6 +470,11 @@ a {
   z-index: 2;
 }
 
+.contact-name {
+  font-size: calc(3px + 1.2vmin);
+  font-family: 'Avenir Next Cyr Bold';
+}
+
 .contact-margin {
   margin-top: 20px;
 }
