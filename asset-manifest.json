@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/mykyta-bereg/static/css/main.d5c74a85.css",
-    "main.js": "/mykyta-bereg/static/js/main.a02d8bb8.js",
+    "main.css": "/mykyta-bereg/static/css/main.9e594b68.css",
+    "main.js": "/mykyta-bereg/static/js/main.0d9e8838.js",
     "static/js/453.97086529.chunk.js": "/mykyta-bereg/static/js/453.97086529.chunk.js",
     "static/media/NAVI-x-Puma.webm": "/mykyta-bereg/static/media/NAVI-x-Puma.472b77371978faf2ed63.webm",
     "static/media/Volkswagen-This-is-Amarok.webm": "/mykyta-bereg/static/media/Volkswagen-This-is-Amarok.4f6f90d651bcc5df0faf.webm",
@@ -17,23 +17,29 @@
     "static/media/David-Guetta-Ayra-Starr-Lil-Durk-Big-FU.webm": "/mykyta-bereg/static/media/David-Guetta-Ayra-Starr-Lil-Durk-Big-FU.9563b31dde8c36b74e63.webm",
     "static/media/Tyla-Yaweh-City-Of-Dreams-ft-Chris-Brown.webm": "/mykyta-bereg/static/media/Tyla-Yaweh-City-Of-Dreams-ft-Chris-Brown.96e9e114c80b34020039.webm",
     "static/media/Wanderlust.webm": "/mykyta-bereg/static/media/Wanderlust.ef5df923b4665dd70b08.webm",
-    "static/media/MADE Evolve Sans Bold EVO (PERSONAL USE).woff": "/mykyta-bereg/static/media/MADE Evolve Sans Bold EVO (PERSONAL USE).a7efc88baa4e8383d94f.woff",
-    "static/media/MADE Evolve Sans Medium EVO (PERSONAL USE).woff": "/mykyta-bereg/static/media/MADE Evolve Sans Medium EVO (PERSONAL USE).797e27030dd3d65a6652.woff",
-    "static/media/MADE Evolve Sans Medium (PERSONAL USE).woff": "/mykyta-bereg/static/media/MADE Evolve Sans Medium (PERSONAL USE).f9e10b7e7557f935d8a4.woff",
-    "static/media/MADE Evolve Sans Light EVO (PERSONAL USE).woff": "/mykyta-bereg/static/media/MADE Evolve Sans Light EVO (PERSONAL USE).f54c11008de0eb1fbfc6.woff",
-    "static/media/MADE Evolve Sans Light (PERSONAL USE).woff": "/mykyta-bereg/static/media/MADE Evolve Sans Light (PERSONAL USE).0f3e5c856f4a9969aca2.woff",
-    "static/media/MADE Evolve Sans Bold (PERSONAL USE).woff": "/mykyta-bereg/static/media/MADE Evolve Sans Bold (PERSONAL USE).15410712b4a6be6e9ec0.woff",
-    "static/media/MADE Evolve Sans Regular EVO (PERSONAL USE).woff": "/mykyta-bereg/static/media/MADE Evolve Sans Regular EVO (PERSONAL USE).ea34c295c7dd630ae8e4.woff",
-    "static/media/MADE Evolve Sans Regular (PERSONAL USE).woff": "/mykyta-bereg/static/media/MADE Evolve Sans Regular (PERSONAL USE).a9c1ab4f97ec1fb7aff0.woff",
-    "static/media/MADE Evolve Sans Thin (PERSONAL USE).woff": "/mykyta-bereg/static/media/MADE Evolve Sans Thin (PERSONAL USE).6b01b553c7f4eaed4f6b.woff",
-    "static/media/MADE Evolve Sans Thin EVO (PERSONAL USE).woff": "/mykyta-bereg/static/media/MADE Evolve Sans Thin EVO (PERSONAL USE).b075a6cf9528439d6e42.woff",
+    "static/media/AvenirNextCyr-UltraLight.otf": "/mykyta-bereg/static/media/AvenirNextCyr-UltraLight.26b5f0274cb4b535ccb0.otf",
+    "static/media/AvenirNextCyr-ThinItalic.otf": "/mykyta-bereg/static/media/AvenirNextCyr-ThinItalic.cede70ee94636e0a84cc.otf",
+    "static/media/AvenirNextCyr-LightItalic.otf": "/mykyta-bereg/static/media/AvenirNextCyr-LightItalic.ff39b1531c6b7ad54eac.otf",
+    "static/media/AvenirNextCyr-BoldItalic.otf": "/mykyta-bereg/static/media/AvenirNextCyr-BoldItalic.8d8a1e71da70f85b68f7.otf",
+    "static/media/AvenirNextCyr-Thin.otf": "/mykyta-bereg/static/media/AvenirNextCyr-Thin.941c33d7d0ea4a8443bb.otf",
+    "static/media/AvenirNextCyr-Light.otf": "/mykyta-bereg/static/media/AvenirNextCyr-Light.7e2f0652653f85ca2bc1.otf",
+    "static/media/AvenirNextCyr-Italic.otf": "/mykyta-bereg/static/media/AvenirNextCyr-Italic.178bdf3551021a1168c7.otf",
+    "static/media/AvenirNextCyr-UltraLightIt.otf": "/mykyta-bereg/static/media/AvenirNextCyr-UltraLightIt.7022f4fdfe68af5f9ed5.otf",
+    "static/media/AvenirNextCyr-Bold.otf": "/mykyta-bereg/static/media/AvenirNextCyr-Bold.4f2c1aa5f961b2371ac4.otf",
+    "static/media/AvenirNextCyr-DemiItalic.otf": "/mykyta-bereg/static/media/AvenirNextCyr-DemiItalic.e8f713c83879092f61ac.otf",
+    "static/media/AvenirNextCyr-MediumItalic.otf": "/mykyta-bereg/static/media/AvenirNextCyr-MediumItalic.e283bd4ef5b02863fc76.otf",
+    "static/media/AvenirNextCyr-Demi.otf": "/mykyta-bereg/static/media/AvenirNextCyr-Demi.59cfce1bae639fce202f.otf",
+    "static/media/AvenirNextCyr-Medium.otf": "/mykyta-bereg/static/media/AvenirNextCyr-Medium.f31435073f77a86786d8.otf",
+    "static/media/AvenirNextCyr-HeavyItalic.otf": "/mykyta-bereg/static/media/AvenirNextCyr-HeavyItalic.326089a70177e04e2438.otf",
+    "static/media/AvenirNextCyr-Heavy.otf": "/mykyta-bereg/static/media/AvenirNextCyr-Heavy.28ecbe934ed27083e0e5.otf",
+    "static/media/AvenirNextCyr-Regular.otf": "/mykyta-bereg/static/media/AvenirNextCyr-Regular.c11003377e95a167a00e.otf",
     "index.html": "/mykyta-bereg/index.html",
-    "main.d5c74a85.css.map": "/mykyta-bereg/static/css/main.d5c74a85.css.map",
-    "main.a02d8bb8.js.map": "/mykyta-bereg/static/js/main.a02d8bb8.js.map",
+    "main.9e594b68.css.map": "/mykyta-bereg/static/css/main.9e594b68.css.map",
+    "main.0d9e8838.js.map": "/mykyta-bereg/static/js/main.0d9e8838.js.map",
     "453.97086529.chunk.js.map": "/mykyta-bereg/static/js/453.97086529.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d5c74a85.css",
-    "static/js/main.a02d8bb8.js"
+    "static/css/main.9e594b68.css",
+    "static/js/main.0d9e8838.js"
   ]
 }
