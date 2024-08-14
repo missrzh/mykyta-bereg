@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/mykyta-bereg/static/css/main.9e594b68.css",
-    "main.js": "/mykyta-bereg/static/js/main.0d9e8838.js",
+    "main.css": "/mykyta-bereg/static/css/main.0904b10d.css",
+    "main.js": "/mykyta-bereg/static/js/main.31e6ac19.js",
     "static/js/453.97086529.chunk.js": "/mykyta-bereg/static/js/453.97086529.chunk.js",
     "static/media/NAVI-x-Puma.webm": "/mykyta-bereg/static/media/NAVI-x-Puma.472b77371978faf2ed63.webm",
     "static/media/Volkswagen-This-is-Amarok.webm": "/mykyta-bereg/static/media/Volkswagen-This-is-Amarok.4f6f90d651bcc5df0faf.webm",
@@ -34,12 +34,12 @@
     "static/media/AvenirNextCyr-Heavy.otf": "/mykyta-bereg/static/media/AvenirNextCyr-Heavy.28ecbe934ed27083e0e5.otf",
     "static/media/AvenirNextCyr-Regular.otf": "/mykyta-bereg/static/media/AvenirNextCyr-Regular.c11003377e95a167a00e.otf",
     "index.html": "/mykyta-bereg/index.html",
-    "main.9e594b68.css.map": "/mykyta-bereg/static/css/main.9e594b68.css.map",
-    "main.0d9e8838.js.map": "/mykyta-bereg/static/js/main.0d9e8838.js.map",
+    "main.0904b10d.css.map": "/mykyta-bereg/static/css/main.0904b10d.css.map",
+    "main.31e6ac19.js.map": "/mykyta-bereg/static/js/main.31e6ac19.js.map",
     "453.97086529.chunk.js.map": "/mykyta-bereg/static/js/453.97086529.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.9e594b68.css",
-    "static/js/main.0d9e8838.js"
+    "static/css/main.0904b10d.css",
+    "static/js/main.31e6ac19.js"
   ]
 }
