@@ -151,6 +151,10 @@
   --button-color: black;
 }
 
+html {
+  background-color: #000000;
+}
+
 /* Основные стили приложения */
 .App {
   background-color: var(--background-color);
@@ -528,6 +532,11 @@ a {
   transform: translate(-50%, -50%);
   z-index: 1;
   pointer-events: none;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+
 }
 
 .background-video::-webkit-media-controls {
