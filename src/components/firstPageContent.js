@@ -88,8 +88,8 @@ const FirstPageContent = ({ onClick }) => {
             <Contacts isModalOpen={isModalOpen} closeModal={closeModal} />
             <div className="container" onClick={onClick}>
                 <div className="content">
-                    <p ref={nameRef} className="name animated-text">MYKYTA BEREG</p>
-                    <p ref={roleRef} className="role animated-text">FILM EDITOR</p>
+                    <p ref={nameRef} className="name">MYKYTA BEREG</p>
+                    <p ref={roleRef} className="role">FILM EDITOR</p>
                 </div>
                 <div className={`side-text ${isSideTextVisible ? 'visible' : ''}`}>
                     <p>
