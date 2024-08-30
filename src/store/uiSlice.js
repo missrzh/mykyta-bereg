@@ -6,6 +6,7 @@ const initialState = {
     isAtTop: true,
     isContactVisible: false,
     isSideTextVisible: false,
+    isModalVideoOpen: false
 };
 
 const uiSlice = createSlice({
@@ -14,6 +15,9 @@ const uiSlice = createSlice({
     reducers: {
         setIsModalOpen: (state, action) => {
             state.isModalOpen = action.payload;
+        },
+        setIsModalVideoOpen: (state, action) => {
+            state.isModalVideoOpen = action.payload;
         },
         setIsScrollBtnVisible: (state, action) => {
             state.isScrollBtnVisible = action.payload;
@@ -31,6 +35,7 @@ const uiSlice = createSlice({
 });
 
 export const {
+    setIsModalVideoOpen,
     setIsModalOpen,
     setIsScrollBtnVisible,
     setIsAtTop,

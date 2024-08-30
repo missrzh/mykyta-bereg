@@ -1,6 +1,8 @@
 import React, { forwardRef } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { setHoveredVideo } from '../store/videoSlice';
+import { useNavigate } from 'react-router-dom';
+import { setIsModalVideoOpen } from '../store/uiSlice';
 import video1 from './../video/video.webm';
 import video2 from './../video/NAVI-x-Puma.webm';
 import video3 from './../video/Adidas-x-F.C.-Union.webm';
@@ -62,7 +64,7 @@ import wanderLust from './../still-shots/wanderlust (1440p).00_00_00_00.Still001
 import nowI from './../still-shots/now_i_know_my_abcs_-_short_film (1080p).00_00_00_00.Still003.png'
 
 const videoLinks = [
-    { text: 'ADIDAS X F.C. UNION', video: video3, darkTheme: true, bg: adidasFcUnionShot },
+    { text: 'ADIDAS - F.C. UNION', video: video3, darkTheme: true, bg: adidasFcUnionShot },
     { text: 'ALFA BANK - YOU CAN', video: video4, darkTheme: true, bg: alfaBankYouCanShot },
     { text: 'BETTERME', video: video15, darkTheme: true, bg: bettermeShot },
     { text: 'MCDONALD`S - THE INVINCIBLE', video: video5, darkTheme: true, bg: mcdonaldsInvisibleShot },
@@ -71,9 +73,9 @@ const videoLinks = [
     { text: 'PORSCHE TAYCAN', video: video6, darkTheme: true, bg: porscheTaycanSpecShot },
     { text: 'PUMA Forever Faster', video: video16, darkTheme: true, bg: pumaForeverFasterShot },
     { text: 'PUMA MIRAGE TECH', video: video8, darkTheme: true, bg: pumaMirageTechShot },
-    { text: 'PUMA X FCSD', video: video17, darkTheme: true, bg: pumaFcsdShot },
-    { text: 'PUMA X NAVI', video: video2, darkTheme: true, bg: pumaXNaviShot },
-    { text: 'PUMA X NAVI JERSEY', video: video18, darkTheme: true, bg: naviPumaJerseyShot },
+    { text: 'PUMA - FCSD', video: video17, darkTheme: true, bg: pumaFcsdShot },
+    { text: 'PUMA - NAVI', video: video2, darkTheme: true, bg: pumaXNaviShot },
+    { text: 'PUMA - NAVI JERSEY', video: video18, darkTheme: true, bg: naviPumaJerseyShot },
     { text: 'VOLKSWAGEN - THIS IS AMAROK', video: video9, darkTheme: true, bg: volkswagenAmarokShot },
     { text: 'YAMAHA R1: MOONBLADE', video: video19, darkTheme: true, bg: yamahaMoonbladeShot },
     { text: 'UNDER ARMOUR - FOREVER IS MADE NOW.', video: video20, darkTheme: true, bg: underArmourForeverShot },
@@ -107,9 +109,15 @@ const VideoWorkPage = forwardRef((_, ref) => {
     const dispatch = useDispatch();
     const { isContactVisible } = useSelector((state) => state.ui);
     const { hoveredVideo } = useSelector((state) => state.video)
+    const navigate = useNavigate();
 
     const handleMouseHover = (videoLink) => {
         dispatch(setHoveredVideo(videoLink));
+    };
+
+    const handleClick = () => {
+        dispatch(setIsModalVideoOpen(true))
+        navigate('/mykyta-bereg/video/jdhf');
     };
 
     return (
@@ -118,7 +126,7 @@ const VideoWorkPage = forwardRef((_, ref) => {
                 <div className='video-type-title'></div>
                 {videoLinks.map((videoLink, index) => (
                     <div className="video-link-container" key={index}>
-                        <div className={`video-link ${hoveredVideo && hoveredVideo.text === videoLink.text ? 'video-link-hovered' : ''}`} onMouseEnter={() => handleMouseHover(videoLink)}>
+                        <div className={`video-link ${hoveredVideo && hoveredVideo.text === videoLink.text ? 'video-link-hovered' : ''}`} onMouseEnter={() => handleMouseHover(videoLink)} onClick={() => handleClick()}>
                             {videoLink.text}
                         </div>
                     </div>

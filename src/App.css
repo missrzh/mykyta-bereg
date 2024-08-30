@@ -241,6 +241,7 @@ a {
 
 /* Стили для имени */
 .name {
+  text-shadow: #000000 1px 0 10px;
   font-size: calc(10px + 2vmin);
   margin: 10px;
   transform: scale(1, 0.85);
@@ -264,6 +265,7 @@ a {
   display: inline-block;
   transform: scale(1, 0.9);
   transition: color 1s ease, color 1s ease;
+  text-shadow: #000000 1px 0 10px;
 }
 
 .contact::after {
@@ -283,6 +285,7 @@ a {
 
 /* Стили для роли */
 .role {
+  text-shadow: #000000 1px 0 10px;
   font-size: calc(1px + 1vmin);
   margin: 0;
   opacity: 0;
@@ -301,7 +304,24 @@ a {
   transform-origin: left bottom;
   white-space: nowrap;
   transition: color 1s ease, color 1s ease;
+  text-shadow: #000000 1px 0 10px;
 }
+
+.side-text::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background-color: var(--contact-underline-bg);
+  transition: width 0.6s ease;
+}
+
+.side-text:hover::after {
+  width: 100%;
+}
+
 
 .side-text p {
   letter-spacing: 2px;
@@ -485,8 +505,9 @@ a {
 }
 
 .contact-name {
-  font-size: calc(3px + 1.2vmin);
+  font-size: calc(10px + 2vmin);
   font-family: 'Avenir Next Cyr Bold';
+  padding: 10px;
 }
 
 .contact-margin {
@@ -515,6 +536,7 @@ a {
 }
 
 .video-link {
+  text-shadow: #000000 1px 0 10px;
   display: inline-block;
   white-space: nowrap;
   transform: scale(1, 0.9);
@@ -634,4 +656,116 @@ a {
   opacity: 1;
   filter: blur(0);
   /* Remove the blur effect when visible */
+}
+
+.single-video-page-container {
+  display: flex;
+  width: 100%;
+
+  background-color: #007bff;
+  height: 100vh;
+
+}
+
+.video-page {
+  position: sticky;
+  top: 0;
+  left: 0;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-family);
+  padding: 10px 20px;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.video-details {
+  width: 70%;
+  text-align: start;
+  font-size: calc(1px + 1.2vmin);
+  padding: 0px;
+}
+
+.single-video-title {
+  font-size: calc(2px + 1.2vmin);
+  padding-bottom: 20px;
+}
+
+.custom-video-player {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  padding: 20px;
+  margin-top: 10px;
+  border-radius: 15px;
+  max-width: 70%;
+  margin: auto;
+}
+
+.single-video {
+  width: 100%;
+  display: block;
+}
+
+.controls {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 25px;
+}
+
+.play-pause,
+.mute-control,
+.fullscreen-control {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+  transition: opacity 0.3s;
+}
+
+.play-pause:hover,
+.mute-control:hover,
+.fullscreen-control:hover {
+  opacity: 0.7;
+}
+
+/* Основной прогресс-бар с низкой прозрачностью */
+.progress-bar {
+  position: relative;
+  flex-grow: 1;
+  margin: 0 0 6px;
+  height: 2px;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 2px;
+  cursor: pointer;
+  -webkit-appearance: none;
+}
+
+/* Второй прогресс-бар, который показывает видимый прогресс */
+.visible-progress {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 1);
+  width: 0;
+  transition: width 0.1s linear;
+  border-radius: 2px;
+}
+
+.controls button:focus,
+.controls input:focus {
+  outline: none;
 }
