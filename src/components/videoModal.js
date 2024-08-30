@@ -1,5 +1,5 @@
 import React from 'react';
-import video28 from './../video/McDonalds-The-invisible.webm';
+import video28 from './../video/yamaha_r1__moonblade-_1440p__1-_1_.webm';
 import CustomVideoPlayer from './customVideoPlayer';
 
 const VideoModal = ({ video, isModalVideoOpen, closeModal }) => {
