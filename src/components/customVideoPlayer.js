@@ -3,6 +3,7 @@ import React, { useRef, useState } from 'react';
 const CustomVideoPlayer = ({ src }) => {
     const videoRef = useRef(null);
     const [isPlaying, setIsPlaying] = useState(false);
+    const [isMuted, setIsMuted] = useState(true)
 
     const togglePlay = () => {
         if (videoRef.current.paused) {
@@ -29,7 +30,9 @@ const CustomVideoPlayer = ({ src }) => {
     };
 
     const toggleMute = () => {
-        videoRef.current.muted = !videoRef.current.muted;
+        const isMutedNow = !videoRef.current.muted;
+        videoRef.current.muted = isMutedNow;
+        setIsMuted(isMutedNow);
     };
 
     const toggleFullscreen = () => {
@@ -51,6 +54,7 @@ const CustomVideoPlayer = ({ src }) => {
                 ref={videoRef}
                 onTimeUpdate={handleProgress}
                 onClick={togglePlay}
+                muted={true}
             >
                 <source src={src} type="video/mp4" />
                 Your browser does not support the video tag.
@@ -73,11 +77,25 @@ const CustomVideoPlayer = ({ src }) => {
                     <div id="visible-progress" className="visible-progress" />
                 </div>
                 <button className="mute-control" onClick={toggleMute}>
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M5 8.5V15.5C5 15.78 5.22 16 5.5 16H9L13.5 19.5C13.78 19.78 14 19.64 14 19.2V4.8C14 4.36 13.78 4.22 13.5 4.5L9 8H5.5C5.22 8 5 8.22 5 8.5ZM16 9.3V14.7C16.94 13.9 17.5 12.6 17.5 11C17.5 9.4 16.94 8.1 16 7.3ZM19 6C20.38 7.26 21.25 9.05 21.25 11C21.25 12.95 20.38 14.74 19 16V6Z" fill="currentColor" />
+                    {isMuted ? (
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill="currentColor" d="M6.5 8.5L12 4.5v15L6.5 15.5H4V8.5h2.5zM20 12c0 2.8-1.4 5.3-3.5 6.7v-2.2c1.2-1.1 2-2.7 2-4.5s-0.8-3.4-2-4.5V5.3c2.1 1.4 3.5 3.9 3.5 6.7zM16.5 12c0 1.1-0.3 2.1-1 3V9c0.7 0.9 1 1.9 1 3z" />
+                        </svg>
+                    ) : (
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill="currentColor" d="M6.5 8.5L12 4.5v15L6.5 15.5H4V8.5h2.5z" />
+                            <path fill="currentColor" d="M16.5 12c0-1.1-0.3-2.1-1-3V15c0.7-0.9 1-1.9 1-3z" />
+                        </svg>
+                    )}
+                </button>
+                <button className="fullscreen-control" onClick={toggleFullscreen}>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M4 4H10V2H2V10H4V4Z" fill="currentColor" />
+                        <path d="M4 20V14H2V22H10V20H4Z" fill="currentColor" />
+                        <path d="M20 20H14V22H22V14H20V20Z" fill="currentColor" />
+                        <path d="M14 2V4H20V10H22V2H14Z" fill="currentColor" />
                     </svg>
                 </button>
-                <button className="fullscreen-control" onClick={toggleFullscreen}>⛶</button>
             </div>
         </div>
     );
