@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/mykyta-bereg/static/css/main.ffbcdf33.css",
+    "main.css": "/mykyta-bereg/static/css/main.38370a29.css",
     "main.js": "/mykyta-bereg/static/js/main.6d8fd5bb.js",
     "static/js/453.6c45af03.chunk.js": "/mykyta-bereg/static/js/453.6c45af03.chunk.js",
     "static/media/betterme-_1080p_.webm": "/mykyta-bereg/static/media/betterme-_1080p_.4e673af09849fccfa9da.webm",
@@ -78,12 +78,12 @@
     "static/media/AvenirNextCyr-Heavy.otf": "/mykyta-bereg/static/media/AvenirNextCyr-Heavy.28ecbe934ed27083e0e5.otf",
     "static/media/AvenirNextCyr-Regular.otf": "/mykyta-bereg/static/media/AvenirNextCyr-Regular.c11003377e95a167a00e.otf",
     "index.html": "/mykyta-bereg/index.html",
-    "main.ffbcdf33.css.map": "/mykyta-bereg/static/css/main.ffbcdf33.css.map",
+    "main.38370a29.css.map": "/mykyta-bereg/static/css/main.38370a29.css.map",
     "main.6d8fd5bb.js.map": "/mykyta-bereg/static/js/main.6d8fd5bb.js.map",
     "453.6c45af03.chunk.js.map": "/mykyta-bereg/static/js/453.6c45af03.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ffbcdf33.css",
+    "static/css/main.38370a29.css",
     "static/js/main.6d8fd5bb.js"
   ]
 }
