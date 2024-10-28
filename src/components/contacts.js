@@ -6,7 +6,7 @@ const Contacts = ({ isModalOpen, closeModal }) => {
             <div className="modal-content" onClick={(e) => e.stopPropagation()}>
                 <div className='contact-name'>MYKYTA BEREG</div>
                 <div className={'contact-margin'}>
-                    USA Representation by <div className='custom-link'>
+                    US Representation by <div className='custom-link'>
                         <a href='https://edit.church/work?editor=mykyta-bereg' target="_blank" rel="noopener noreferrer"> Church</a><br></br>
                         <a href="mailto:production@edit.church">production@edit.church</a>
                     </div>

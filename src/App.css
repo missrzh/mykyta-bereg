@@ -330,8 +330,39 @@ a {
   margin: 0;
 }
 
+.volume-control {
+  position: relative;
+  display: inline-block;
+}
+
+.close-modal {
+  cursor: pointer;
+}
+
+.volume-slider-container {
+  display: none;
+  position: absolute;
+  top: -40px;
+  /* Положение ползунка */
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #ffffff;
+  padding: 1px;
+  border-radius: 1px;
+}
+
+.volume-control:hover .volume-slider-container {
+  display: block;
+  /* Показывать ползунок при наведении */
+}
+
+.volume-slider {
+  width: 10px;
+}
+
 /* Стили для модального окна */
 .modal-overlay {
+  overflow: hidden;
   position: fixed;
   top: 0;
   left: 0;
@@ -643,6 +674,10 @@ a {
   animation-name: floatDown;
 }
 
+.video-normal {
+  display: block;
+}
+
 .contact,
 .side-text {
   opacity: 0;
@@ -665,6 +700,117 @@ a {
   background-color: #007bff;
   height: 100vh;
 
+
+}
+
+.video-mobile {
+  display: none;
+}
+
+.video-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.loading-container {
+  z-index: 1000;
+  height: 100vh;
+  width: 100vw;
+  background-color: #000000;
+}
+
+.loading-spinner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20px;
+  /* Reduced radius */
+  height: 20px;
+}
+
+.trapezoid {
+  width: 0;
+  height: 0;
+  border-top: 3px solid white;
+  /* Smaller top base of the trapezoid */
+  border-left: 2px solid transparent;
+  border-right: 2px solid transparent;
+  border-bottom: 1px solid transparent;
+  position: absolute;
+  transform-origin: 50% 100%;
+}
+
+.trapezoid:nth-child(1) {
+  transform: rotate(0deg) translate(0, -15px);
+}
+
+.trapezoid:nth-child(2) {
+  transform: rotate(30deg) translate(0, -15px);
+}
+
+.trapezoid:nth-child(3) {
+  transform: rotate(60deg) translate(0, -15px);
+}
+
+.trapezoid:nth-child(4) {
+  transform: rotate(90deg) translate(0, -15px);
+}
+
+.trapezoid:nth-child(5) {
+  transform: rotate(120deg) translate(0, -15px);
+}
+
+.trapezoid:nth-child(6) {
+  transform: rotate(150deg) translate(0, -15px);
+}
+
+.trapezoid:nth-child(7) {
+  transform: rotate(180deg) translate(0, -15px);
+}
+
+.trapezoid:nth-child(8) {
+  transform: rotate(210deg) translate(0, -15px);
+}
+
+.trapezoid:nth-child(9) {
+  transform: rotate(240deg) translate(0, -15px);
+}
+
+.trapezoid:nth-child(10) {
+  transform: rotate(270deg) translate(0, -15px);
+}
+
+.trapezoid:nth-child(11) {
+  transform: rotate(300deg) translate(0, -15px);
+}
+
+.trapezoid:nth-child(12) {
+  transform: rotate(330deg) translate(0, -15px);
+}
+
+.loading-spinner {
+  animation: rotate 2s linear infinite;
+}
+
+@keyframes rotate {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+Expla .video-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
 }
 
 .video-page {
@@ -680,6 +826,7 @@ a {
   padding: 10px 20px;
   z-index: 1;
   overflow: hidden;
+  transition: visibility 0.5s ease-in-out, transform 0.5s ease-in-out;
 }
 
 .video-details {
@@ -687,11 +834,16 @@ a {
   text-align: start;
   font-size: calc(1px + 1.2vmin);
   padding: 0px;
+  text-transform: uppercase;
 }
 
 .single-video-title {
+  width: 70%;
   font-size: calc(2px + 1.2vmin);
   padding-bottom: 20px;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: space-between;
 }
 
 .custom-video-player {
@@ -706,10 +858,12 @@ a {
   border-radius: 15px;
   max-width: 70%;
   margin: auto;
+  transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out, transform 0.5s ease-in-out;
 }
 
 .single-video {
   width: 100%;
+  max-height: 1100px;
   display: block;
 }
 
@@ -770,7 +924,23 @@ a {
   outline: none;
 }
 
+.madonna-video {
+  display: flex;
+  flex-direction: column;
+}
+
 @media only screen and (max-width: 600px) {
+
+  .container {
+    cursor: n-resize;
+    position: relative;
+    height: 100svh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: filter 0.3s ease;
+    z-index: 3;
+  }
 
   /* Ваши стили для мобильных устройств */
   .name {
@@ -843,6 +1013,7 @@ a {
     z-index: 2;
   }
 
+
   .background-video {
     display: none;
   }
@@ -873,6 +1044,11 @@ a {
     padding-bottom: 20px;
   }
 
+  .video-mobile {
+    display: block;
+    width: 100%;
+  }
+
   .modal-content {
     text-transform: uppercase;
     font-family: var(--font-family);
@@ -886,4 +1062,53 @@ a {
     transform: scale(1, 0.9);
   }
 
+  video {
+    background-image: none !important;
+    width: 100%;
+
+  }
+
+
+
+  .contact {
+    letter-spacing: 2px;
+    cursor: pointer;
+    font-family: var(--font-family);
+    color: var(--contact-color);
+    font-size: calc(3px + 2vmin);
+    position: fixed;
+    width: 100%;
+    text-align: center;
+
+    top: auto;
+    height: 30px;
+    left: 0;
+    bottom: 0 !important;
+    z-index: 4;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-bottom: -5px;
+    display: inline-block;
+    transform: scale(1, 0.9);
+    transition: color 1s ease, color 1s ease;
+    text-shadow: #000000 1px 0 10px;
+    background: linear-gradient(to bottom,
+        rgba(0, 0, 0, 0) 0%,
+        /* Прозрачный вверху */
+        rgba(0, 0, 0, 0.9) 100%
+        /* Непрозрачный внизу */
+      );
+
+    backdrop-filter: blur(15px);
+    /* Дополнительный размытие фона */
+
+  }
+
+  .contact::after {
+    display: none;
+  }
+
+  .video-normal {
+    display: none;
+  }
 }

@@ -8,8 +8,8 @@ function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/mykyta-bereg/video/:videoId" element={<MainComponent />} />
-        <Route path="/mykyta-bereg" element={<MainComponent />} />
+        <Route path="/:slug" element={<MainComponent />} />
+        <Route path="/" element={<MainComponent />} />
       </Routes>
     </Router>
 

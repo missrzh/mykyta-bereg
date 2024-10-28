@@ -4,15 +4,34 @@ import VideoWorkPage from './videoworkPage';
 import { useSelector, useDispatch } from 'react-redux';
 import VideoModal from './videoModal';
 import { setIsModalVideoOpen } from '../store/uiSlice'
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, useParams } from 'react-router-dom';
+import { useState, useEffect } from 'react';
+import works from '../works.json'; // Импорт JSON-файла
 
 
 const MainComponent = () => {
     const dispatch = useDispatch();
     const navigate = useNavigate();
+    const { slug } = useParams();
+    slug ? dispatch(setIsModalVideoOpen(true)) : dispatch(setIsModalVideoOpen(false));
+
 
     const { hoveredVideo } = useSelector((state) => state.video);
     const { isModalVideoOpen } = useSelector((state) => state.ui)
+    const [imagesLoaded, setImagesLoaded] = useState(false);
+
+    useEffect(() => {
+        const imageUrls = works.map((work) => work.bg);
+
+        // Предзагружаем изображения
+        preloadBackgroundImages(imageUrls)
+            .then(() => {
+                setImagesLoaded(true); // Все изображения загружены
+            })
+            .catch((error) => {
+                console.error('Ошибка при загрузке фоновых изображений:', error);
+            });
+    }, []);
 
     const videoWorkRef = React.useRef(null);
 
@@ -23,8 +42,23 @@ const MainComponent = () => {
     };
     const closeModal = () => {
         dispatch(setIsModalVideoOpen(false))
-        navigate('/mykyta-bereg');
+        navigate('/');
     };
+    const preloadBackgroundImages = (imageUrls) => {
+        const promises = imageUrls.map((url) => {
+            return new Promise((resolve, reject) => {
+                const img = new Image();
+                img.src = url;
+                img.onload = resolve;
+                img.onerror = reject;
+            });
+        });
+        return Promise.all(promises);
+    };
+    if (!imagesLoaded) {
+        return <div></div>; // Можно отобразить индикатор загрузки
+    }
+
     return (
         <div className={`App dark-theme`}>
             {hoveredVideo && (
@@ -49,6 +83,7 @@ const MainComponent = () => {
                         backgroundSize: 'cover',
                         backgroundRepeat: 'no-repeat',
                         backgroundPosition: 'center',
+
                     }}
                 >
                     <source src={hoveredVideo.video} type="video/webm" />
@@ -58,7 +93,7 @@ const MainComponent = () => {
             <FirstPageContent onClick={scrollToVideoWork} />
             <VideoWorkPage ref={videoWorkRef} />
             {isModalVideoOpen && (
-                <VideoModal closeModal={closeModal} isModalVideoOpen={isModalVideoOpen} />
+                <VideoModal closeModal={closeModal} isModalVideoOpen={isModalVideoOpen} slug={slug} />
             )}
         </div>
     )
